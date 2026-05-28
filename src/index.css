@@ -29,6 +29,40 @@ body {
   color: #2C3E2D;
 }
 
+/* Keep doctor/receptionist cards and inputs readable on all pages */
+[class*="bg-white/5"][class*="border-white/10"],
+[class*="bg-white/10"][class*="border-white/20"] {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-color: #D4E2C8 !important;
+  color: #2C3E2D !important;
+  box-shadow: 0 14px 32px rgba(107, 142, 94, 0.12) !important;
+}
+
+[class*="bg-white/5"][class*="border-white/10"] .text-white,
+[class*="bg-white/10"][class*="border-white/20"] .text-white {
+  color: #2C3E2D !important;
+}
+
+[class*="bg-white/5"][class*="border-white/10"] input,
+[class*="bg-white/5"][class*="border-white/10"] select,
+[class*="bg-white/5"][class*="border-white/10"] textarea,
+[class*="bg-white/10"][class*="border-white/20"] input,
+[class*="bg-white/10"][class*="border-white/20"] select,
+[class*="bg-white/10"][class*="border-white/20"] textarea {
+  background-color: #FFFFFF !important;
+  color: #2C3E2D !important;
+  border-color: #D4E2C8 !important;
+}
+
+[class*="bg-white/5"][class*="border-white/10"] .placeholder-slate-400::placeholder,
+[class*="bg-white/10"][class*="border-white/20"] .placeholder-slate-400::placeholder,
+[class*="bg-white/5"][class*="border-white/10"] .text-slate-500,
+[class*="bg-white/5"][class*="border-white/10"] .text-slate-400,
+[class*="bg-white/10"][class*="border-white/20"] .text-slate-500,
+[class*="bg-white/10"][class*="border-white/20"] .text-slate-400 {
+  color: #6B8E5E !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

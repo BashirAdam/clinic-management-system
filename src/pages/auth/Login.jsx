@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { FaHospital, FaEnvelope, FaLock, FaEye, FaEyeSlash, FaArrowRight, FaStar, FaShieldHalved, FaUserDoctor, FaUserTie } from 'react-icons/fa6'
+import { FaEnvelope, FaLock, FaEye, FaEyeSlash, FaArrowRight, FaStar, FaShieldHalved, FaUserDoctor, FaUserTie } from 'react-icons/fa6'
 import { useAuth } from '../../hooks/useAuth'
 import { fetchUserRoleFromFirestore } from '../../utils/authUtils'
 
@@ -70,32 +70,18 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sage-50 via-sage-100 to-white text-sage-900 antialiased relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Floating orbs */}
-        <div className="absolute top-20 left-20 w-72 h-72 bg-sage-300/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-96 h-96 bg-sage-200/40 rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-sage-100/60 rounded-full blur-3xl animate-pulse animation-delay-2000"></div>
-        
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-        
-        {/* Radial gradient overlay */}
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-sage-100/40 to-sage-200/70"></div>
-      </div>
+
 
       {/* Main Content */}
+
       <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
         <div className="w-full max-w-md">
           {/* Header */}
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-sage-500 to-sage-600 rounded-2xl mb-6 shadow-2xl shadow-sage-500/20">
-              <FaHospital className="w-10 h-10 text-white" />
-            </div>
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-sage-700 via-sage-600 to-sage-500 bg-clip-text text-transparent mb-3">
+          <div className="text-center mb-4 mt-2">
+            <h1 className="text-3xl font-bold bg-gradient-to-r from-sage-700 via-sage-600 to-sage-500 bg-clip-text text-transparent mb-2">
               Welcome Back
             </h1>
-            <p className="text-lg text-sage-700 leading-relaxed">
+            <p className="text-base text-sage-700 leading-relaxed">
               Access your professional healthcare dashboard
             </p>
           </div>
@@ -114,14 +100,14 @@ export default function Login() {
                     onClick={() => setSelectedRole('doctor')}
                     className={`relative p-4 rounded-2xl border-2 transition-all duration-300 ${
                       selectedRole === 'doctor'
-                        ? 'border-sage-500 bg-sage-100 shadow-lg shadow-sage-500/20'
-                        : 'border-sage-200 bg-white hover:border-sage-300 hover:bg-sage-50'
+                        ? 'border-slate-400 bg-slate-100 text-slate-800 shadow-lg shadow-slate-400/20'
+                        : 'border-sage-200 bg-white hover:border-sage-300 hover:bg-sage-50 text-sage-900'
                     }`}
                   >
                     <div className="flex flex-col items-center space-y-2">
-                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 shadow-sm ${
                         selectedRole === 'doctor'
-                          ? 'bg-sage-500 text-white'
+                          ? 'bg-gradient-to-br from-slate-700 to-slate-800 text-slate-50'
                           : 'bg-sage-100 text-sage-700'
                       }`}>
                         <FaUserDoctor className="w-6 h-6" />
@@ -135,14 +121,14 @@ export default function Login() {
                     onClick={() => setSelectedRole('receptionist')}
                     className={`relative p-4 rounded-2xl border-2 transition-all duration-300 ${
                       selectedRole === 'receptionist'
-                        ? 'border-sage-500 bg-sage-100 shadow-lg shadow-sage-500/20'
-                        : 'border-sage-200 bg-white hover:border-sage-300 hover:bg-sage-50'
+                        ? 'border-slate-400 bg-slate-100 text-slate-800 shadow-lg shadow-slate-400/20'
+                        : 'border-sage-200 bg-white hover:border-sage-300 hover:bg-sage-50 text-sage-900'
                     }`}
                   >
                     <div className="flex flex-col items-center space-y-2">
-                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                      <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 shadow-sm ${
                         selectedRole === 'receptionist'
-                          ? 'bg-sage-500 text-white'
+                          ? 'bg-gradient-to-br from-slate-700 to-slate-800 text-slate-50'
                           : 'bg-sage-100 text-sage-700'
                       }`}>
                         <FaUserTie className="w-6 h-6" />
@@ -221,7 +207,7 @@ export default function Login() {
               <button 
                 type="submit"
                 disabled={!selectedRole || !email || !password || isLoading}
-                className="w-full py-4 px-6 bg-gradient-to-r from-sage-600 to-sage-700 hover:from-sage-700 hover:to-sage-800 disabled:from-sage-200 disabled:to-sage-300 disabled:cursor-not-allowed text-sage-50 font-bold text-lg rounded-2xl shadow-lg shadow-sage-500/20 hover:shadow-xl hover:shadow-sage-500/30 transition-all duration-300 transform hover:scale-105 disabled:transform-none disabled:scale-100"
+                className="w-full py-4 px-6 border border-sage-300/80 bg-gradient-to-r from-sage-600 to-sage-700 hover:from-sage-700 hover:to-sage-800 disabled:from-sage-200 disabled:to-sage-300 disabled:cursor-not-allowed text-sage-50 font-bold text-lg rounded-2xl shadow-lg shadow-sage-500/20 hover:shadow-xl hover:shadow-sage-500/30 transition-all duration-300 transform hover:scale-105 disabled:transform-none disabled:scale-100"
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center space-x-2">
