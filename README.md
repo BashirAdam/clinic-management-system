@@ -9,7 +9,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.12-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> 🚀 **Live Application**: [life-clinic-management-system.vercel.app](https://life-clinic-management-system.vercel.app)
+> 🚀 **Live Application**: [life-clinic-management-system.vercel.app](https://clinic-management-system-main3.vercel.app/)
 
 A modern, secure, and feature-rich clinic management system built with React 19, Firebase, and Tailwind CSS. Streamline your healthcare operations with comprehensive patient management, appointment scheduling, prescription management, billing systems, and role-based access control.
 
@@ -342,34 +342,23 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👨‍💻 Author
 
-**Dhruv Patel**
-- GitHub: [@dhruvpatel16120](https://github.com/dhruvpatel16120)
-- Live Demo: [life-clinic-management-system.vercel.app](https://life-clinic-management-system.vercel.app)
+## 👨‍🎓 Author
 
-## 🙏 Acknowledgments
-
-- **Firebase** for backend services
-- **Vercel** for hosting and deployment
-- **React Team** for the amazing framework
-- **Tailwind CSS** for the beautiful styling system
-- **Open Source Community** for inspiration and tools
-
-## 📞 Support
-
-If you have any questions or need help:
-
-1. **Check** the [Documentation](DOCUMENTATION.md)
-2. **Open** an [Issue](https://github.com/dhruvpatel16120/clinic-management-system/issues)
-3. **Star** the repository if you find it helpful
+| Field | Information |
+|-------|-------------|
+| **Name** | Bashir Adam Ahmed Ali |
+| **Student ID** | 210208999 |
+| **Email** | 210208999@ostimteknik.edu.tr |
+| **University** | OSTIM Technical University |
+| **Department** |  Software  Engineering |
+| **Course** | WEX 428 - Workplace Experience III |
+| **Term** | Spring 2026 |
+| **GitHub** | [github.com/BashirAdam](https://github.com/BashirAdam) |
+| **Live Demo** | [clinic-management-system-main3.vercel.app](https://clinic-management-system-main3.vercel.app) |
 
 ---
 
 <div align="center">
 
-**⭐ Star this repository if it helped you! ⭐**
-
-[![GitHub stars](https://img.shields.io/github/stars/dhruvpatel16120/clinic-management-system?style=social)](https://github.com/dhruvpatel16120/clinic-management-system)
-[![GitHub forks](https://img.shields.io/github/forks/dhruvpatel16120/clinic-management-system?style=social)](https://github.com/dhruvpatel16120/clinic-management-system)
-[![GitHub issues](https://img.shields.io/github/issues/dhruvpatel16120/clinic-management-system)](https://github.com/dhruvpatel16120/clinic-management-system/issues)
 
 </div>
