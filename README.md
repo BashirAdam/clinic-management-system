@@ -135,21 +135,44 @@ http://localhost:5173
 
 ---
 
+
 ## Project Structure
 
 ```text
 src/
-├── components/
-├── contexts/
-├── firebase/
-├── hooks/
-├── pages/
-│   ├── auth/
-│   ├── doctor/
-│   └── receptionist/
-├── utils/
-├── App.jsx
-└── main.jsx
+├── components/          # Reusable UI components
+│   ├── LogoutButton.jsx
+│   ├── ProtectedRoute.jsx
+│   ├── EmailVerificationStatus.jsx
+│   └── TokenDisplay.jsx
+├── contexts/           # React context providers
+│   └── AuthContext.jsx
+├── firebase/           # Firebase configuration
+│   └── config.js
+├── hooks/              # Custom React hooks
+│   └── useAuth.js
+├── pages/              # Application pages
+│   ├── auth/           # Authentication pages
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   ├── ForgotPasswordForm.jsx
+│   │   └── VerifyEmail.jsx
+│   ├── doctor/         # Doctor-specific pages
+│   │   ├── Doctor.jsx
+│   │   ├── appointment/
+│   │   ├── prescriptions/
+│   │   └── token/
+│   ├── receptionist/   # Receptionist-specific pages
+│   │   ├── Receptionist.jsx
+│   │   ├── appointment/
+│   │   ├── billing/
+│   │   ├── prescriptions/
+│   │   └── token/
+│   └── Home.jsx
+├── utils/              # Utility functions
+│   └── authUtils.js
+├── App.jsx             # Main application component
+└── main.jsx            # Application entry point
 ```
 
 ---
