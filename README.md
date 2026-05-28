@@ -81,11 +81,13 @@ Our clinic management system is built with cutting-edge technologies to ensure p
 
 ## 🌟 Live Demo
 
-Experience the application live at: **[life-clinic-management-system.vercel.app](https://life-clinic-management-system.vercel.app)**
+Experience the application live at: **[clinic-management-system-main3.vercel.app](https://clinic-management-system-main3.vercel.app)**
 
-### 🧪 Test Accounts
-- **Doctor**: Create a new account with Doctor role
-- **Receptionist**: Create a new account with Receptionist role
+### Test Accounts
+- **Doctor**: demo@clinic.com / demo123
+- **Receptionist**: reception@clinic.com / demo123
+
+
 
 | Feature | Preview |
 |:--------:|:-------:|
