@@ -31,14 +31,15 @@ This project helps streamline clinic operations by combining:
 
 ## Screenshots
 
+
 ### Login Page
-![Login Page](preview/login%20page.png)
+![Login Page](preview/login.png)
 
 ### Doctor Dashboard
-![Doctor Dashboard](preview/Doctor%20Dashboard.png)
+![Doctor Dashboard](preview/doctor_dashboard.png)
 
 ### Receptionist Dashboard
-![Receptionist Dashboard](preview/Receptionist%20Dashboard.png)
+![Receptionist Dashboard](preview/receptionist_dashboard.png)
 
 ---
 
