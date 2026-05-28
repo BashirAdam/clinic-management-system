@@ -1,46 +1,14 @@
-# 🏥 Life Clinic Management System
+#  Clinic Management System
 
-![Life Clinic Management System Banner](preview/logo.png)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge&logo=vercel)](https://life-clinic-management-system.vercel.app)
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
-[![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-[![Firebase](https://img.shields.io/badge/Firebase-12.1.0-FFCA28?style=for-the-badge&logo=firebase)](https://firebase.google.com/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.1.12-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> 🚀 **Live Application**: [life-clinic-management-system.vercel.app](https://life-clinic-management-system.vercel.app)
+>  **Live Application**: [clinic-management-system-main3.vercel.app](https://clinic-management-system-main3.vercel.app)
 
 A modern, secure, and feature-rich clinic management system built with React 19, Firebase, and Tailwind CSS. Streamline your healthcare operations with comprehensive patient management, appointment scheduling, prescription management, billing systems, and role-based access control.
 
-## 🛠️ Tech Stack
+##  Features
 
-Our clinic management system is built with cutting-edge technologies to ensure performance, security, and scalability:
-
-### **Frontend Technologies**
-![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react)
-![Vite](https://img.shields.io/badge/Vite-7.1.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.12-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### **Backend & Database**
-![Firebase](https://img.shields.io/badge/Firebase-12.1.0-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Firestore](https://img.shields.io/badge/Firestore-NoSQL-FF6B6B?style=for-the-badge&logo=firebase&logoColor=white)
-![Authentication](https://img.shields.io/badge/Firebase_Auth-Secure-FF6B6B?style=for-the-badge&logo=firebase&logoColor=white)
-
-### **Development Tools**
-![ESLint](https://img.shields.io/badge/ESLint-9.33.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
-![PostCSS](https://img.shields.io/badge/PostCSS-8.5.6-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-
-### **Deployment & Hosting**
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-
-## ✨ Features
-
-### 🔐 **Authentication & Security**
+###  **Authentication & Security**
 - **Firebase Authentication** with email/password
 - **Email Verification** for account activation
 - **Password Reset** functionality
@@ -48,7 +16,7 @@ Our clinic management system is built with cutting-edge technologies to ensure p
 - **Protected Routes** for unauthorized access prevention
 - **Secure Firestore Rules** for data protection
 
-### 👨‍⚕️ **Doctor Dashboard**
+###  **Doctor Dashboard**
 - **Real-time Statistics** (appointments, waiting patients, prescriptions)
 - **Appointment Management** with patient details
 - **Prescription Creation & Management**
@@ -56,14 +24,14 @@ Our clinic management system is built with cutting-edge technologies to ensure p
 - **Patient Queue Management** with token system
 - **Prescription History** and editing capabilities
 
-### 🏥 **Receptionist Dashboard**
+###  **Receptionist Dashboard**
 - **Appointment Scheduling** and management
 - **Token Management** system for patient queues
 - **Patient Registration** and information management
 - **Prescription Viewing** and management
 - **Real-time Updates** across all systems
 
-### 💰 **Billing & Payment System**
+###  **Billing & Payment System**
 - **Invoice Creation** with detailed itemization
 - **Multiple Payment Methods** (Cash, Card, Online)
 - **Payment Processing** and status tracking
@@ -71,7 +39,7 @@ Our clinic management system is built with cutting-edge technologies to ensure p
 - **PDF Generation** for invoices and prescriptions
 - **Revenue Analytics** and financial reports
 
-### 📱 **Modern UI/UX**
+###  **Modern UI/UX**
 - **Responsive Design** for all devices
 - **Beautiful Gradients** and modern aesthetics
 - **Real-time Updates** with Firebase listeners
@@ -79,13 +47,23 @@ Our clinic management system is built with cutting-edge technologies to ensure p
 - **Toast Notifications** for user feedback
 - **Search & Filter** capabilities throughout
 
-## 🌟 Live Demo
+##  Live Demo
 
 Experience the application live at: **[clinic-management-system-main3.vercel.app](https://clinic-management-system-main3.vercel.app)**
 
 ### Test Accounts
-- **Doctor**: demo@clinic.com / demo123
-- **Receptionist**: reception@clinic.com / demo123
+
+>  **IMPORTANT for Testing:** Use these credentials to access both dashboards. You do NOT need to create new accounts.
+
+| Role | Email | Password |
+|------|-------|----------|
+| Doctor | demo@clinic.com | demo123 |
+| Receptionist | reception@clinic.com | demo123 |
+
+**Steps to login:**
+1. Choose **Doctor** or **Receptionist** role
+2. Copy the email and password from above
+3. Click **Sign In**
 
 
 
@@ -192,9 +170,8 @@ service cloud.firestore {
 npm run dev
 ```
 
-Visit `http://localhost:5173` to see your application!
-
-## 🏗️ Project Structure
+Visit `http://localhost:5173` to see
+##  Project Structure
 
 ```
 src/
@@ -311,9 +288,14 @@ The system uses Firebase's built-in email verification:
 
 ## Author
 
-**Dhruv Patel**
-- GitHub: [@dhruvpatel16120](https://github.com/dhruvpatel16120)
-- Live Demo: [life-clinic-management-system.vercel.app](https://life-clinic-management-system.vercel.app)
+**Bashir Adam Ahmed Ali**
+- Student ID: 210208999
+- Email: 210208999@ostimteknik.edu.tr
+- GitHub: [@BashirAdam](https://github.com/BashirAdam)
+- Live Demo: [clinic-management-system-main3.vercel.app](https://clinic-management-system-main3.vercel.app)
+- University: OSTIM Technical University
+- Course: WEX 428 - Workplace Experience III
+- Term: Spring 2026
 
 
 
