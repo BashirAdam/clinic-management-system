@@ -1,0 +1,122 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        accent: '#6B8E5E',
+        sage: {
+          50: '#FDFBF7',
+          100: '#F4F7EE',
+          200: '#E2E8E0',
+          300: '#D4E2C8',
+          400: '#B7C8A7',
+          500: '#6B8E5E',
+          600: '#4A6B3E',
+          700: '#3A5530',
+          800: '#2C3E2D',
+          900: '#1F2B1F',
+        },
+        blue: {
+          50: '#F4F7EE',
+          100: '#E5EEDC',
+          200: '#D4E2C8',
+          300: '#B7C8A7',
+          400: '#8FA67D',
+          500: '#6B8E5E',
+          600: '#4A6B3E',
+          700: '#3A5530',
+          800: '#2C3E2D',
+          900: '#1F2B1F',
+        },
+        cyan: {
+          50: '#F4F7EE',
+          100: '#E5EEDC',
+          200: '#D4E2C8',
+          300: '#B7C8A7',
+          400: '#8FA67D',
+          500: '#6B8E5E',
+          600: '#4A6B3E',
+          700: '#3A5530',
+          800: '#2C3E2D',
+          900: '#1F2B1F',
+        },
+        sky: {
+          50: '#F4F7EE',
+          100: '#E5EEDC',
+          200: '#D4E2C8',
+          300: '#B7C8A7',
+          400: '#8FA67D',
+          500: '#6B8E5E',
+          600: '#4A6B3E',
+          700: '#3A5530',
+          800: '#2C3E2D',
+          900: '#1F2B1F',
+        },
+        slate: {
+          50: '#FDFBF7',
+          100: '#F4F7EE',
+          200: '#E2E8E0',
+          300: '#D4E2C8',
+          400: '#B7C8A7',
+          500: '#8FA67D',
+          600: '#6B8E5E',
+          700: '#4A6B3E',
+          800: '#2C3E2D',
+          900: '#1F2B1F',
+        },
+        gray: {
+          50: '#FDFBF7',
+          100: '#F4F7EE',
+          200: '#E2E8E0',
+          300: '#D4E2C8',
+          400: '#B7C8A7',
+          500: '#8FA67D',
+          600: '#6B8E5E',
+          700: '#4A6B3E',
+          800: '#2C3E2D',
+          900: '#1F2B1F',
+        },
+      },
+      keyframes: {
+        gradientShift: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-6px)' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(8px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        gradientShift: 'gradientShift 10s ease infinite',
+        float: 'float 3s ease-in-out infinite',
+        fadeInUp: 'fadeInUp 900ms ease both',
+        fadeInUpDelayed: 'fadeInUp 900ms ease 120ms both',
+        fadeIn: 'fadeIn 1.2s ease 500ms both',
+      },
+      backgroundImage: {
+        gradientLanding: 'linear-gradient(120deg, #FDFBF7, #D4E2C8)',
+        markRadial: 'radial-gradient(circle at 50% 50%, #6B8E5E, transparent 65%)',
+      },
+      dropShadow: {
+        mark: '0 6px 16px rgba(107, 142, 94, 0.25)',
+      },
+    },
+  },
+  plugins: [],
+}
+
+
