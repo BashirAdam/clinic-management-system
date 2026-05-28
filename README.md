@@ -1,7 +1,7 @@
 ````markdown
 # Bashir Clinic Management System
 
-Live Application: https://clinic-management-system-main3.vercel.app/
+Live Application: [clinic-management-system-main3.vercel.app](https://clinic-management-system-main3.vercel.app/)
 
 A modern clinic management system built with React, Firebase, and Tailwind CSS for doctors, receptionists, and administrators.
 
@@ -30,7 +30,6 @@ This project helps streamline clinic operations by combining:
 ---
 
 ## Screenshots
-
 
 ### Login Page
 ![Login Page](preview/login.png)
@@ -129,9 +128,7 @@ service cloud.firestore {
 npm run dev
 ```
 
-Open the app at:
-
-http://localhost:5173
+Open the app at: http://localhost:5173
 
 ---
 
